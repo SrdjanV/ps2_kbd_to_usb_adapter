@@ -20,7 +20,9 @@ OPTIMIZATION = s
 # add the LUFA source files to the build
 SRC += $(LUFA_SRC_USB) $(LUFA_SRC_USBCLASS)
 # path to LUFA library. Override the default by setting it in your environment or make commandline
-LUFA_PATH ?= ../libraries/lufa_LUFA_140302/LUFA
+#LUFA_PATH ?= ../libraries/lufa_LUFA_140302/LUFA
+LUFA_PATH ?= /home/svucko/ps2-usb/lufa-LUFA-140302/LUFA
+#LUFA_PATH ?= /home/svucko/ps2-usb/lufa-LUFA-170418/LUFA
 # defines for lufa_avrdude.mk so it can talk to the Adafruit ATmega32u4's bootstrap
 AVRDUDE_PROGRAMMER ?= avr109
 AVRDUDE_PORT ?= /dev/ttyACM0
